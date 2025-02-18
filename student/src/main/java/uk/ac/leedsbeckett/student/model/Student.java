@@ -34,12 +34,9 @@ public class Student {
                     @JoinColumn(name = "course_id")
             }
             )
-
-
     @EqualsAndHashCode.Exclude
     @ToString.Exclude
     private Set<Course> courses = new HashSet<>();
-
 }
 
 

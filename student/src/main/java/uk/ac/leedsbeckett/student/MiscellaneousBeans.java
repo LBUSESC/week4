@@ -4,7 +4,6 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import uk.ac.leedsbeckett.student.model.Course;
-import uk.ac.leedsbeckett.student.model.CourseRepository;
 import uk.ac.leedsbeckett.student.model.Student;
 import uk.ac.leedsbeckett.student.model.StudentRepository;
 
@@ -14,7 +13,7 @@ import java.util.Set;
 public class MiscellaneousBeans {
 
     @Bean
-    CommandLineRunner initDatabase(CourseRepository courseRepository, StudentRepository studentRepository) {
+    CommandLineRunner initDatabase( StudentRepository studentRepository) {
         return args -> {
 
 

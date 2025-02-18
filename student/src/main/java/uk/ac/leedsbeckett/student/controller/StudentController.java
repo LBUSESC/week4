@@ -27,7 +27,8 @@ public class StudentController {
         Student student = studentService.getStudentByIdJson(id);
         return new ResponseEntity<>(student, HttpStatus.OK);
     }
-    
+
+
     // HATEOAS Implementation
 //    @GetMapping("/{id}")
 //    public EntityModel<Student> getStudentJson(@PathVariable Long id) {
@@ -35,5 +36,6 @@ public class StudentController {
 //        return EntityModel.of(student,linkTo(methodOn(StudentController.class)
 //                .getStudentJson(id)).withSelfRel());
 //    }
+
 }
 
